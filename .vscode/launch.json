@@ -7,8 +7,8 @@
         {
             "type": "pwa-chrome",
             "request": "launch",
-            "name": "Open HomePage.html",
-            "file": "/Users/ajayghimire/Development/code/PersonalWebsite/HomePage.html"
+            "name": "Open index.html",
+            "file": "/Users/ajayghimire/Development/code/PersonalWebsite/index.html"
         }
     ]
 }

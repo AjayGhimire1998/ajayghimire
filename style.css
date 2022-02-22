@@ -1,79 +1,164 @@
-.nav {
-    text-decoration: solid;
-    color: black;
-    position: absolute;
-   
-
-}
-ul {
-    list-style-type: none;
+*{
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: black;
-    position: fixed;
-    top: 0%;
-    width: 100%;
-    font-family: 'Times New Roman', Times, serif;
-    
-  }
-  
-  li {
-    float:left;
-    border-right: 1px solid #bbb;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-transform: uppercase;
-    
-  }
-  
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    background-color:antiquewhite;
-    color: black;
-  }
+    box-sizing: border-box;
+}
 
-  .active {
-    background-color: #04AA6D;
-    color: black;
-  }
+/* Navigation bar */
 
-  img{
-    max-width: 100%;
-    max-height: 100%;
-    
-  }
-   
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
 
-.container{
-    text-align: left;
-    color: white;
-    font-size: 50px;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
     
+
     
 }
 
-.centered{
-    position: absolute;
-    top: 50%;
-    left: 30%;
-    transform: translate(-50%,-50%);
-    text-shadow: 10% 10% 10%;
-    text-shadow: black;
+.nav ul li{
+  font-family: fantasy ;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+  
+
+  
+.nav ul li a {
+   text-decoration: none;
+   color: white;
+   padding: 8px 25px;
+   transition: all 0.4s ease;
+    
+  }
+
+.nav ul li a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+
+/* home section */
+  
+#home{
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 840px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#home::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url('images/ajay.jpeg') no-repeat center center/cover;
+  height: 900px;
+  width: 100%;
+  z-index: -1;
+  opacity: 1;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+.headings{
+  font-family: fantasy ;
+  font-size: 3rem ;
+  text-align: left;
+  margin: 80px 5px;
+}
+
+.para{
+  font-family: fantasy;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 20px 10px;
 }
 
 .Enquire{
-    position:absolute;
-    top: 60%;
-    left: 20%;
-    transform: translate(-50%, -50%);
-    box-sizing: border-box;
+padding: 10px 40px;
+background-color: transparent;
+border: 1px solid white;
+color: white;
+font-family: fantasy ;
+outline: none;
+transition: .6s ease;
+
 }
+
+.Enquire:hover{
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+  font-weight: bold;
+}
+
+/* About me section*/
+
+#about{
+  display: flex;
+  flex-direction: column;
+}
+
+.headings2{
+  font-family: fantasy ;
+  font-size: 3rem ;
+  text-align: center;
+  padding: 15px;
+  position: relative;
+ 
+  
+
+}
+
+ .headings2::before, .headings2::after{
+   content: "";
+   display: inline-block;
+   width: 50%;
+   height: 3px;
+   background: black;
+   position: relative;
+   vertical-align: middle;
+  
+   
+ }
+ .headings2::before{
+   right: 0.5em;
+   margin-left: -50%;
+
+ }
+
+ .headings2::after{
+   left: 0.5em;
+   margin-right: -50%;
+ }
+
+
+   
+
+
+
+
+   
+
 
 body{
     margin: auto;
