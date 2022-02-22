@@ -12,14 +12,14 @@ ul {
     overflow: hidden;
     background-color: black;
     position: fixed;
-    top: 0;
+    top: 0%;
     width: 100%;
     font-family: 'Times New Roman', Times, serif;
     
   }
   
   li {
-    float: left;
+    float:left;
     border-right: 1px solid #bbb;
   }
   
@@ -51,7 +51,7 @@ ul {
    
 
 .container{
-    text-align: center;
+    text-align: left;
     color: white;
     font-size: 50px;
     
@@ -61,8 +61,18 @@ ul {
 .centered{
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 30%;
     transform: translate(-50%,-50%);
+    text-shadow: 10% 10% 10%;
+    text-shadow: black;
+}
+
+.Enquire{
+    position:absolute;
+    top: 60%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
 }
 
 body{
