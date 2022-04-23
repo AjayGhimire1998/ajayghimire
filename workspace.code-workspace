@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "../../../Labs"
+		},
+		{
+			"path": "../../../phase-0-html-tag-lab"
+		},
+		{
+			"path": "../../../phase-0-html-link-tag-with-href"
+		},
+		{
+			"path": "../phase-0-html-lists-lab"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "PersonalWebsite"
+	}
+}
