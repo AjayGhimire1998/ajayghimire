@@ -35,7 +35,7 @@ body {
 }
 
 .nav ul li {
-  font-family: fantasy;
+  font-family: Palantino;
   font-size: 1.1rem;
   font-weight: bold;
 }
@@ -60,7 +60,7 @@ body {
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.5);
   height: 840px;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   color: white;
 }
@@ -79,20 +79,20 @@ body {
 .main {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   position: absolute;
   top: 40%;
   left: 10%;
 }
 .headings {
-  font-family: fantasy;
+  font-family: Palantino;
   font-size: 2rem;
   text-align: left;
   margin: 80px 5px;
 }
 
 .para {
-  font-family: fantasy;
+  font-family: Palantino;
   font-size: 20px;
   text-align: center;
   margin: 20px 10px;
@@ -108,7 +108,7 @@ padding: 10px 40px;
 background-color: transparent;
 border: 1px solid white;
 color: white;
-font-family: fantasy ;
+font-family: Palantino ;
 outline: none;
 transition: .6s ease;
 
@@ -128,15 +128,16 @@ transition: .6s ease;
   
 }
 .Resume {
-  padding: 10px 40px;
+  padding: 5px 10px;
+
   background-color: transparent;
   border: 1px solid white;
   color: white;
-  font-family: fantasy;
+  font-family: Palantino;
   outline: none;
   transition: 0.6s ease;
   text-decoration: none;
-  margin: 15px;
+  margin: 5px;
 }
 
 .Resume:hover {
@@ -156,7 +157,7 @@ transition: .6s ease;
 }
 
 .headings2 {
-  font-family: Candara;
+  font-family: Palantino;
   font-size: 2rem;
   text-align: center;
   padding: 10px;
@@ -282,7 +283,7 @@ label {
   padding: 10px 40px;
   border: 1px solid black;
   color: white;
-  font-family: fantasy;
+  font-family: Palantino;
   outline: none;
   transition: 0.6s ease;
   text-decoration: none;
@@ -339,14 +340,14 @@ body {
   left: 10%;
 }
 .headings {
-  font-family: fantasy;
+  font-family: Palantino;
   font-size: 30px;
   text-align: left;
   margin: 60px 5px;
 }
 
 .para {
-  font-family: fantasy;
+  font-family: Palantino;
   font-size: 20px;
   text-align: center;
   margin: 20px 10px;
