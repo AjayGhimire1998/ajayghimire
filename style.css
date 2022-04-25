@@ -1,56 +1,61 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     width: auto;
-}
+} */
 
 /* Navigation bar */
 
-.nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    position: sticky;
-    top: 0;
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+  line-height: 1.45;
+  align-items: center;
+  /* box-sizing: border-box; */
+}
 
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 
 .nav ul {
-    display: flex;
-    list-style: none;
-    margin: 20px 0px;
-    
-
-    
+  display: flex;
+  list-style: none;
+  margin: 20px 0px;
 }
 
-.nav ul li{
-  font-family: fantasy ;
-    font-size: 1.1rem;
-    font-weight: bold;
+.nav ul li {
+  font-family: fantasy;
+  font-size: 1.1rem;
+  font-weight: bold;
 }
-  
 
-  
 .nav ul li a {
-   text-decoration: none;
-   color: white;
-   padding: 8px 25px;
-   transition:  0.4s ;
-    
-  }
+  text-decoration: none;
+  color: white;
+  padding: 8px 25px;
+  transition: 0.4s;
+}
 
-.nav ul li a:hover{
-    background-color: white;
-    color: black;
-    box-shadow: 0 0 10px white;
+.nav ul li a:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 10px white;
 }
 
 /* home section */
-  
-#home{
+
+#home {
   display: flex;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.5);
@@ -60,26 +65,18 @@
   color: white;
 }
 
-/* body{
-  display: flex;
-  flex-direction: column;
-  
-  padding: 0;
-  
-} */
-
-#home::before{
+#home::before {
   content: "";
   position: absolute;
   top: 0;
   right: 0;
-  background: url('images/ajay.jpeg') no-repeat center center/cover;
+  background: url("images/ajay.jpeg") no-repeat center center/cover;
   height: 900px;
   width: 100%;
-  z-index: -1; 
+  z-index: -1;
   opacity: 1;
 }
-.main{
+.main {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -87,21 +84,21 @@
   top: 40%;
   left: 10%;
 }
-.headings{
-  font-family: fantasy ;
-  font-size: 3rem ;
+.headings {
+  font-family: fantasy;
+  font-size: 2rem;
   text-align: left;
   margin: 80px 5px;
 }
 
-.para{
+.para {
   font-family: fantasy;
-  font-size: 1.5rem;
+  font-size: 20px;
   text-align: center;
   margin: 20px 10px;
 }
 
-.resume-enquire{
+.resume-enquire {
   display: flex;
   align-items: center;
 }
@@ -124,87 +121,95 @@ transition: .6s ease;
   box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
   font-weight: bold;
 } */
-
-.Resume{
+.buttons {
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  
+}
+.Resume {
   padding: 10px 40px;
   background-color: transparent;
   border: 1px solid white;
   color: white;
-  font-family: fantasy ;
+  font-family: fantasy;
   outline: none;
-  transition: .6s ease;
+  transition: 0.6s ease;
   text-decoration: none;
-  
-  }
-  
-  .Resume:hover{
-    cursor: pointer;
-    background-color: white;
-    color: black;
-    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
-    font-weight: bold;
-  }
-  
+  margin: 15px;
+}
+
+.Resume:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+  font-weight: bold;
+}
 
 /* About me section*/
 
-#about{
+#about {
   display: flex;
   flex-direction: column;
+  font-family: Cambria;
 }
 
-.headings2{
-  font-family: fantasy ;
-  font-size: 3rem ;
+.headings2 {
+  font-family: Candara;
+  font-size: 2rem;
   text-align: center;
-  padding: 15px;
+  padding: 10px;
   position: relative;
- 
-  
-
 }
 
- .headings2::before, .headings2::after{
-   content: "";
-   display: inline-block;
-   width: 50%;
-   height: 3px;
-   background: black;
-   position: relative;
-   vertical-align: middle;
-  
-   
- }
- .headings2::before{
-   right: 0.5em;
-   margin-left: -50%;
+.headings2::before,
+.headings2::after {
+  content: "";
+  display: inline-block;
+  width: 50%;
+  height: 3px;
+  background: black;
+  position: relative;
+  vertical-align: middle;
+}
+.headings2::before {
+  right: 0.5em;
+  margin-left: -50%;
+}
 
- }
-
- .headings2::after{
-   left: 0.5em;
-   margin-right: -50%;
- }
+.headings2::after {
+  left: 0.5em;
+  margin-right: -50%;
+}
 
 /* Portfolio section*/
 
-#portfolio{
+#portfolio {
   display: flex;
   flex-direction: column;
 }
 
 /* enquire form section*/
 
-
-#enquire{
+#enquire {
   display: flex;
   flex-direction: column;
-  
+  align-items: center;
+  /* justify-content: center; */
+  /* text-align: center; */
 }
 
-   
+#form {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 /* Style inputs, select elements and textareas */
-input[type=text], select, textarea{
+input[type="text"],
+select,
+textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -220,16 +225,18 @@ label {
 }
 
 /* Style the submit button */
-button[type=submit]{
+#submit {
   background-color: black;
   color: white;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  float: right;
-} 
-
+}
+#submit:hover {
+  background-color: rgba(121, 116, 116, 0.5);
+  color: black;
+}
 
 /* Style the container */
 .container {
@@ -259,39 +266,122 @@ button[type=submit]{
   clear: both;
 }
 
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-}
-  .col-25, .col-75, button[type=submit] {
-    width: 100%;
-    margin-top: 0;
+#contact {
+  margin-bottom: 250px;
 }
 
+.medias {
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.img-facebook {
+  height: 30px;
+  padding: 10px 40px;
+  border: 1px solid black;
+  color: white;
+  font-family: fantasy;
+  outline: none;
+  transition: 0.6s ease;
+  text-decoration: none;
+}
+.img-facebook:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 5px black, 0 0 10px black, 0 0 15px black;
+  font-weight: bold;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 480px) {
+}
+/* .col-25,
+.col-75,
+button[type="submit"] {
+  width: 100%;
+  margin-top: 0;
+} */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  overflow-x: hidden;
+
+  /* position: relative; */
+
+  /* font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+  line-height: 1.45;
+  align-items: center;
+  box-sizing: border-box; */
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 840px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+.headings {
+  font-family: fantasy;
+  font-size: 30px;
+  text-align: left;
+  margin: 60px 5px;
+}
+
+.para {
+  font-family: fantasy;
+  font-size: 20px;
+  text-align: center;
+  margin: 20px 10px;
+}
+.nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  transition: 0.4s;
+  justify-content: center;
+  align-items: center;
+}
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url("images/ajay.jpeg") no-repeat center center/cover;
+  height: 900px;
+  width: 100%;
+  z-index: -1;
+  opacity: 1;
+}
 
 /*contact me section*/
 
-#contact{
+#contact {
   display: flex;
   flex-direction: column;
 }
 
-.medias{
+.medias {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   box-sizing: border-box;
+  position: absolute;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-   
-
