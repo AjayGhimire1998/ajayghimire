@@ -70,11 +70,11 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  background: url("images/ajay.jpeg") no-repeat center center/cover;
-  height: 900px;
+  background: url("images/IMG_3673.jpeg") no-repeat center center/cover;
+  height: 850px;
   width: 100%;
   z-index: -1;
-  opacity: 1;
+  opacity: 1.5;
 }
 .main {
   display: flex;
